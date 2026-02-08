@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propose Day</title>
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+
+  <body>
+    <canvas id="starfield"></canvas>
+
+    <!-- Hidden until animation ends -->
+    <button id="valentinesButton" style="display: none;">
+      Click Me! ❤
+    </button>
+
+    <!-- EmailJS MUST LOAD FIRST -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("VYTE0po73rjE1J9n4"); // your public key
+      })();
+    </script>
+
+    <!-- Your main script -->
+    <script src="script.js"></script>
+  </body>
+</html>
